@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AC2CD90E2FB75A06493A227 /* Pods_TeamOneIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3363B4BB8FC3C79A5FAFCFE /* Pods_TeamOneIOS.framework */; };
+		D810559C2806F09C00E8DC32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D810559B2806F09C00E8DC32 /* GoogleService-Info.plist */; };
 		D8B60AB72806E7F50049B966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B60AB62806E7F50049B966 /* AppDelegate.swift */; };
 		D8B60AB92806E7F50049B966 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B60AB82806E7F50049B966 /* SceneDelegate.swift */; };
 		D8B60ABB2806E7F50049B966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B60ABA2806E7F50049B966 /* ViewController.swift */; };
 		D8B60ABE2806E7F50049B966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B60ABC2806E7F50049B966 /* Main.storyboard */; };
 		D8B60AC02806E7F60049B966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B60ABF2806E7F60049B966 /* Assets.xcassets */; };
 		D8B60AC32806E7F60049B966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B60AC12806E7F60049B966 /* LaunchScreen.storyboard */; };
+		D8B60ACB2806E8540049B966 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B60ACA2806E8540049B966 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FF6414045BE335353D4F9FB /* Pods-TeamOneIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamOneIOS.release.xcconfig"; path = "Target Support Files/Pods-TeamOneIOS/Pods-TeamOneIOS.release.xcconfig"; sourceTree = "<group>"; };
+		A3363B4BB8FC3C79A5FAFCFE /* Pods_TeamOneIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamOneIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D810559B2806F09C00E8DC32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8B60AB32806E7F50049B966 /* TeamOneIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamOneIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B60AB62806E7F50049B966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8B60AB82806E7F50049B966 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		D8B60ABF2806E7F60049B966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8B60AC22806E7F60049B966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8B60AC42806E7F60049B966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B60ACA2806E8540049B966 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EFF4643FB8E4C9960546E4ED /* Pods-TeamOneIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamOneIOS.debug.xcconfig"; path = "Target Support Files/Pods-TeamOneIOS/Pods-TeamOneIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC2CD90E2FB75A06493A227 /* Pods_TeamOneIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200F9093FF82A50D51733176 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF4643FB8E4C9960546E4ED /* Pods-TeamOneIOS.debug.xcconfig */,
+				7FF6414045BE335353D4F9FB /* Pods-TeamOneIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3CDAFB2DB7544169E3730C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3363B4BB8FC3C79A5FAFCFE /* Pods_TeamOneIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8B60AAA2806E7F50049B966 = {
 			isa = PBXGroup;
 			children = (
 				D8B60AB52806E7F50049B966 /* TeamOneIOS */,
 				D8B60AB42806E7F50049B966 /* Products */,
+				200F9093FF82A50D51733176 /* Pods */,
+				3CDAFB2DB7544169E3730C60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				D8B60ABF2806E7F60049B966 /* Assets.xcassets */,
 				D8B60AC12806E7F60049B966 /* LaunchScreen.storyboard */,
 				D8B60AC42806E7F60049B966 /* Info.plist */,
+				D8B60ACA2806E8540049B966 /* UserModel.swift */,
+				D810559B2806F09C00E8DC32 /* GoogleService-Info.plist */,
 			);
 			path = TeamOneIOS;
 			sourceTree = "<group>";
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8B60AC72806E7F60049B966 /* Build configuration list for PBXNativeTarget "TeamOneIOS" */;
 			buildPhases = (
+				FB0BABC7194074019D4B1B08 /* [CP] Check Pods Manifest.lock */,
 				D8B60AAF2806E7F50049B966 /* Sources */,
 				D8B60AB02806E7F50049B966 /* Frameworks */,
 				D8B60AB12806E7F50049B966 /* Resources */,
+				6CA57FD83E575F891244FC34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B60AC32806E7F60049B966 /* LaunchScreen.storyboard in Resources */,
+				D810559C2806F09C00E8DC32 /* GoogleService-Info.plist in Resources */,
 				D8B60AC02806E7F60049B966 /* Assets.xcassets in Resources */,
 				D8B60ABE2806E7F50049B966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CA57FD83E575F891244FC34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeamOneIOS/Pods-TeamOneIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeamOneIOS/Pods-TeamOneIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamOneIOS/Pods-TeamOneIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB0BABC7194074019D4B1B08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeamOneIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8B60AAF2806E7F50049B966 /* Sources */ = {
@@ -140,6 +215,7 @@
 			files = (
 				D8B60ABB2806E7F50049B966 /* ViewController.swift in Sources */,
 				D8B60AB72806E7F50049B966 /* AppDelegate.swift in Sources */,
+				D8B60ACB2806E8540049B966 /* UserModel.swift in Sources */,
 				D8B60AB92806E7F50049B966 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +358,7 @@
 		};
 		D8B60AC82806E7F60049B966 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF4643FB8E4C9960546E4ED /* Pods-TeamOneIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,7 +377,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bumjun.TeamOneIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamOneIOS.list;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,6 +387,7 @@
 		};
 		D8B60AC92806E7F60049B966 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF6414045BE335353D4F9FB /* Pods-TeamOneIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -328,7 +406,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bumjun.TeamOneIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TeamOneIOS.list;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
